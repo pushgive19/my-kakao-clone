@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2c6cfb22b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <ul class="statusBar">
+      <li class="statusBar__column">
+        <div class="column__timestamp">12:36 오후</div>
+      </li>
+      <li class="statusBar__column">
+        <div class="statusBar__icon icon--radio">
+          <i class="fas fa-rss"></i>
+        </div>
+        <div class="statusBar__icon icon--wifi">
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="statusBar__icon icon--battery">
+          <i class="fas fa-battery-full"></i>
+          <div class="battery__level">100%</div>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="header">
+      <li class="header__column">
+        <div class="header__title">친구</div>
+      </li>
+      <li class="header__column">
+        <div class="header__icon">
+          <span class="header__icon icon--find">
+            <i class="fas fa-search"> </i>
+          </span>
+          <span class="header__icon icon--plusFriend">
+            <i class="fas fa-user-plus"></i>
+          </span>
+          <span class="header__icon icon--music">
+            <i class="fas fa-music"></i>
+          </span>
+          <span class="header__icon icon--setting">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+    <main class="friend">
+      <header class="friend__header">
+        <div class="friend__column">
+          <img src="image/minjoon.jpg" class="friend__avatar avatar-large" />
+          <div class="friend__content">
+            <span class="friend__name">김민준</span>
+          </div>
+        </div>
+      </header>
+      <ul class="friend__birthday">
+        <h5 class="friend__title">생일인 친구</h5>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">이조현</span>
+              <span class="friend__status">:>)</span>
+              <span class="friend__birthday-icon">🍰</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__gift-btn">
+              선물하기<i class="fas fa-gift"></i>
+            </span>
+          </div>
+        </li>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">친구의 생일을 확인해보세요!</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__number">
+              6 >
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="friend__suggest">
+        <h5 class="friend__title">추천친구</h5>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">새로운 친구를 만나보세요!</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__number">
+              55 >
+            </span>
+          </div>
+        </li>
+      </ul>
+      <ul class="friend__channel">
+        <h5 class="friend__title">채널</h5>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">채널</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__number">15 ></span>
+          </div>
+        </li>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">한음</span>
+              <span class="friend__status">한음페스티벌</span>
+              <span class="friend__ad-icon">AD</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="friend__friend">
+        <h5 class="friend__title">친구 3</h5>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> 강민성 </span>
+              <span class="friend__status"></span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening"></div>
+          </div>
+        </li>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> 강태우 </span>
+              <span class="friend__status">내 욕망은 내가 만들지</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening"></div>
+          </div>
+        </li>
+        <li class="friend__list">
+          <div class="friend__column">
+            <img src="image/minjoon.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name"> 강한빛 </span>
+              <span class="friend__status"></span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">소우주(Mikrokosmos)-방..</div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="chat.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="hashtag.html" class="nav__list-link">
+            <i class="fas fa-hashtag"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
