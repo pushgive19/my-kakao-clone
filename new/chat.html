@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | kakao Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2c6cfb22b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <a href="index.html" class="header__back-btn">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1 class="header-title">
+        준
+      </h1>
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="header__icon">
+        <i class="fas fa-bars"></i>
+      </span>
+    </header>
+
+    <main class="chat">
+      <ul class="chat__messages">
+        <h5 class="chat__timestamp js-timestamp">
+          Friday, January 11, 2019
+          <!-- 이거 js로 만들자. -->
+        </h5>
+        <li class="incoming-messages message">
+          <img src="images/min.jpg" class="g-avatar" />
+          <div class="message__content">
+            <span class="message__author">영광</span>
+            <div class="message__bubble">I love you</div>
+          </div>
+          <span class="chat__column-timestamp">15:19</span>
+        </li>
+        <li class="sending-messages message">
+          <span class="chat__column-timestamp">15:19</span>
+          <div class="message__content">
+            <div class="message__bubble">I love you</div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat-write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="Add message"
+          class="chat-write__input"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+
+    <script src="clock.js"></script>
+  </body>
+</html>
