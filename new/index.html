@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats | kakao Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/2c6cfb22b9.js"
       crossorigin="anonymous"
@@ -24,33 +24,43 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
-    <div class="header">
-      <h1 class="header-title">Chats</h1>
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-cog"></i>
-      </span>
-    </div>
+    <header class="header">
+      <div class="header__headre-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__headre-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
     <main class="chats">
       <ul class="chats__list">
         <li class="chats__chat">
-          <div class="chat__column">
-            <a href="chat.html">
-            <img class="chat__avatar" src="images/min.jpg" alt="person image" />
-            <div class="chat__content">
-              <span class="chat__username">MinJoon</span>
-              <span class="chat__preview">집에가자</span>
+          <a href="chat.html">
+            <div class="chat__friend friend friend--lg">
+              <div class="friend__column">
+                <img src="images/min.jpg" class="friend__avatar m-avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">Joon</span>
+                  <span class="friend__preview">always happy</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__content">
+                  <span class="chat__timestamp">
+                    Yesterday
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">Yesterday</span>
-          </div>
-        </a>
+          </a>
         </li>
       </ul>
     </main>
@@ -63,6 +73,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>

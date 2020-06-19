@@ -1,5 +1,5 @@
 const clock = document.querySelector(".status-bar__clock"),
-  kakaoTime = document.querySelector(".js-timestamp");
+  kakaoCal = document.querySelector(".js-timestamp");
 
 function paintTime(hour, minute) {
   clock.textContent = `${hour}:${minute}`;
@@ -66,7 +66,7 @@ function paintKakaoTime(y, m, date, d) {
   //     : m == 10
   //     ? "November"
   //     : "December";
-  kakaoTime.textContent = `${day[d]}, ${month[m]} ${date}, ${y}`;
+  kakaoCal.innerText = `${day[d]}, ${month[m]} ${date}, ${y}`;
 }
 
 function getTime() {

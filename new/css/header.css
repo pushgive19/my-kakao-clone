@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  align-items: center;
+}
+.header .header__title {
+  font-weight: 700;
+  font-size: 25px;
+}
+.header .header__icon {
+  padding-left: 20px;
+  font-size: 23px;
+  cursor: pointer;
+}
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+.header .header__back-btn {
+  padding-right: 15px;
+  font-size: 20px;
+}

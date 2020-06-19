@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat | kakao Clone</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script
       src="https://kit.fontawesome.com/2c6cfb22b9.js"
@@ -26,18 +26,23 @@
       </div>
     </div>
     <header class="header">
-      <a href="index.html" class="header__back-btn">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <h1 class="header-title">
-        준
-      </h1>
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-bars"></i>
-      </span>
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="header__title">
+          준
+        </h1>
+      </div>
+
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
     </header>
 
     <main class="chat">
@@ -47,7 +52,7 @@
           <!-- 이거 js로 만들자. -->
         </h5>
         <li class="incoming-messages message">
-          <img src="images/min.jpg" class="g-avatar" />
+          <img src="images/min.jpg" class="friend__avatar" />
           <div class="message__content">
             <span class="message__author">영광</span>
             <div class="message__bubble">I love you</div>
