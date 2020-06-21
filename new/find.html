@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find | kakao Clone</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script
       src="https://kit.fontawesome.com/2c6cfb22b9.js"
@@ -27,18 +27,28 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-      <h1 class="header__title">Find</h1>
-    </div>
-    <div class="header__header-column">
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-cog"></i>
-      </span>
-    </div>
+        <h1 class="header__title">Find</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
     </header>
-  
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-list">
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              QR Code
+            </span>
+          </li>
           <li class="find__header-btn header-btn">
             <span class="header-btn__icon">
               <i class="fas fa-user-plus fa-2x"></i>
@@ -67,12 +77,12 @@
       </header>
       <ul class="find__recommended">
         <h5 class="find__title">Recommended Friends</h5>
-        <li class="friends__friend friend friend--lg">
+        <li class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/min.jpg" class="friend__avatar " />
+            <img src="images/min.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
-                Daniel
+                레이첼 맥아담스
               </span>
             </div>
           </div>
@@ -93,6 +103,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="far fa-comment"></i>
           </a>
         </li>

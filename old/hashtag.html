@@ -9,23 +9,18 @@
     ></script>
   </head>
   <body>
-    <ul class="statusBar">
-      <li class="statusBar__column">
+    <div class="status-bar">
+      <div class="status-bar__column">
         <div class="column__timestamp">12:36 오후</div>
-      </li>
-      <li class="statusBar__column">
-        <div class="statusBar__icon icon--radio">
-          <i class="fas fa-rss"></i>
-        </div>
-        <div class="statusBar__icon icon--wifi">
-          <i class="fas fa-wifi"></i>
-        </div>
-        <div class="statusBar__icon icon--battery">
-          <i class="fas fa-battery-full"></i>
-          <div class="battery__level">100%</div>
-        </div>
-      </li>
-    </ul>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+        <span class="battery__level">100%</span>
+      </div>
+    </div>
+ 
 
     <nav class="nav">
       <ul class="nav__list">

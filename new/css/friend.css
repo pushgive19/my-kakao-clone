@@ -9,7 +9,7 @@
   margin-right: 15px;
 }
 .friend__avatar.g-avatar {
-  width: 75px;
+  width: 65px;
 }
 .friend__avatar.m-avatar {
   width: 60px;
@@ -31,14 +31,46 @@
 }
 
 .friend .friend__now-listening {
-  border: 2px solid #69d28b;
+  border: 2px solid #36ff76;
   border-radius: 15px;
   font-size: 13px;
   padding: 5px 10px;
 }
-.friend__content span {
+/* .friend__content span {
   opacity: 0.7;
+} */
+
+.friend .friend__add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 50px;
+  height: 40px;
+  border-radius: 4px;
 }
-.friend__content i {
-  color: #69d28b;
+.chat .friend__content {
+  /* display: flex; */
+  /* position: relative; */
+}
+.friend .timestamp__badge {
+  /* position: absolute; */
+  text-align: right;
+  background-color: #e75f3f;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+}
+.chats .friend__content {
+  /* position: absolute; */
+}
+.chats .timestamp__badge {
+  position: relative;
+  right: -45px;
+  top: 5px;
 }

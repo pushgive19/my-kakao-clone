@@ -1,8 +1,12 @@
 const clock = document.querySelector(".status-bar__clock"),
   kakaoCal = document.querySelector(".js-timestamp");
 
+let gap = 1000;
+
 function paintTime(hour, minute) {
-  clock.textContent = `${hour}:${minute}`;
+  clock.textContent = `${hour < 10 ? `0${hour}` : hour}:${
+    minute < 10 ? `0${minute}` : minute
+  }`;
 }
 function paintKakaoTime(y, m, date, d) {
   const month = [
@@ -73,16 +77,26 @@ function getTime() {
   const timeStamp = new Date();
   const hours = timeStamp.getHours();
   const minutes = timeStamp.getMinutes();
+  // const day - ;
+  paintTime(hours, minutes);
+}
+function getDay() {
+  console.log("hi");
+  const timeStamp = new Date();
   const year = timeStamp.getFullYear();
   const month = timeStamp.getMonth();
   const date = timeStamp.getDate();
   const day = timeStamp.getDay();
   // const day - ;
-  paintTime(hours, minutes);
   paintKakaoTime(year, month, date, day);
+  clearInterval(this);
 }
 
 function init() {
   setInterval(getTime, 1000);
+
+  const clearDay = setInterval(getDay, 1000); //이거 한번작동하고
+
+  // clearInterval(clearDay, 20000);
 }
 init();
