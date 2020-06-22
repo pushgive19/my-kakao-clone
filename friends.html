@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats | kakao Clone</title>
+    <title>Friends | kakao Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
+
     <script
       src="https://kit.fontawesome.com/2c6cfb22b9.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-  
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock"></span>
@@ -26,57 +26,69 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__headre-column">
-        <h1 class="header__title">Chats</h1>
+      <div class="header__header-column">
+        <h1 class="header__title">Friends</h1>
       </div>
-      <div class="header__headre-column">
+      <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
         </span>
         <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat">
-          <a href="chat.html">
-            <div class="chat__friend friend friend--lg">
-              <div class="friend__column">
-                <img src="images/min.jpg" class="friend__avatar m-avatar" />
-                <div class="friend__content">
-                  <span class="friend__name">Joon</span>
-                  <span class="friend__preview">always happy</span>
-                </div>
-              </div>
-              <div class="friend__column">
-                <div class="friend__content ">
-                  <span class="chat__timestamp">
-                    Yesterday
-                  </span>
-                  <span class="timestamp__badge">8</span>
-                </div>
-              </div>
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/min.jpg" class="friend__avatar g-avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Min Joon</span>
+              <span class="friend__preview">중력이 다른 삶</span>
             </div>
-          </a>
+          </div>
+        </div>
+      </header>
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus Friend</h5>
+        <div class="friends__friend friend">
+          <img src="images/min.jpg" class="friend__avatar" />
+        </div>
+      </div>
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/min.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Daniel</span>
+              <span class="friend__preview">always happy</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__content">
+              <span class="friend__now-listening">
+                FTISLAND (FT nomadcoder)
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
         </li>
       </ul>
     </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
             <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -91,7 +103,9 @@
         </li>
       </ul>
     </nav>
-
+    <div class="big__screen">
+      <div class="big__screen-text">사이즈를 줄여주세요~</div>
+    </div>
     <script src="clock.js"></script>
   </body>
 </html>

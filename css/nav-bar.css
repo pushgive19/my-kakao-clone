@@ -42,5 +42,5 @@
 }
 .nav {
   transform: translateY(100px);
-  animation: fadeIn 0.3s ease-in-out forwards 1s;
+  animation: fadeIn 0.3s ease-in-out forwards 0.3s;
 }

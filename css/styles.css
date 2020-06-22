@@ -10,6 +10,8 @@
 @import "settings.css";
 @import "chat.css";
 @import "top__wrapper.css";
+@import "big-screen.css";
+
 * {
   box-sizing: border-box;
 }
