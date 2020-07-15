@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .phone-area {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+          ),
+          url("images/min.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 15px 20px 10px 20px;
+        position: relative;
+      }
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .profile .follow__section {
+        width: 100%;
+      }
+      .profile .profile__avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        object-fit: cover;
+        margin-top: 105px;
+        margin-bottom: 15px;
+        box-shadow: 0px 10px 60px -7px rgb(0, 0, 0);
+        mask-image: cross-fade();
+      }
+      .profile__name {
+        font-family: "Jua", sans-serif;
+        letter-spacing: 2px;
+        font-size: 19px;
+        color: #4f90c2;
+      }
+      .profile__location {
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      .profile__btn {
+        margin: 40px 0px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .profile__btn button {
+        width: 130px;
+        height: 40px;
+        border: none;
+        background-color: white;
+        font-weight: 300;
+        font-size: 15px;
+        border-radius: 10px;
+        color: rgb(63, 63, 63);
+        box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.589);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .profile__btn .btn__message {
+        background-color: #4f90c2;
+      }
+      .profile__abstract {
+        display: flex;
+        justify-content: space-around;
+      }
+      .profile__abstract span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+
+        /* align-items: center; */
+      }
+      .profile__abstract p {
+        margin-top: 5px;
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/2c6cfb22b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="phone-area">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock"></span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-ban"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="friends.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">
+            Settings
+          </h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-bars header__icon"></i>
+          </span>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="profile">
+          <img src="images/min.jpg" alt="" class="profile__avatar" />
+          <h3 class="profile__name">Daniel</h3>
+          <p class="profile__location">click me</p></p>
+          <div class="follow__section">
+            <div class="profile__btn">
+              <button class="btn__follow">팔로우</button>
+              <button class="btn__message">메세지</button>
+            </div>
+            <div class="profile__abstract">
+              <span
+                >140
+                <p>팔로워</p>
+              </span>
+              <span class="abstract__list"
+                >250
+                <p>팔로우</p>
+              </span>
+              <span class="abstract__list"
+                >369
+                <p>이미지</p>
+              </span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="big__screen">
+      <div class="big__screen-text">사이즈를 줄여주세요~</div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
