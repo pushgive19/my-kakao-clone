@@ -1,11 +1,13 @@
 .nav {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  background-color: #fcfcfc;
-  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fbfbfb;
+  width: 90%;
   border-top: 1px solid #f2f2f2;
-  padding: 20px 50px;
+  padding: 0px 50px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 30px 30px 40px rgba(118, 146, 180, 0.05);
 }
 .nav .nav__list {
   display: flex;
@@ -40,7 +42,53 @@
     transform: none;
   }
 }
-.nav {
+/* .nav {
   transform: translateY(100px);
   animation: fadeIn 0.3s ease-in-out forwards 0.3s;
+} */
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: black;
+  margin-right: 2px;
+}
+
+.nav__list-item {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.nav__list-item:hover {
+  color: #fae100;
+  border-top: 4px solid #fae100;
+}
+.nav__list-item:hover .dot {
+  background-color: #fae100;
+}
+
+.dot-container {
+  animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* #FAE100 카카오 노랑색 */
+.nav__list-link .dot-container {
+  height: 50px;
 }
